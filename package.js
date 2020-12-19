@@ -3,8 +3,8 @@
 Package.describe({
   summary: 'Meteor sign up and sign in templates core package.',
   version: '1.15.0',
-  name: 'sebl29:useraccounts-core',
-  git: 'https://github.com/meteor-useraccounts/core.git',
+  name: 'useraccounts:core',
+  git: 'https://github.com/cheesington/core.git',
 });
 
 Package.onUse(function(api) {
@@ -20,8 +20,8 @@ Package.onUse(function(api) {
   ], ['client', 'server']);
 
   api.use([
-    'blaze-html-templates@1.1.2',
-    'jquery@1.11.11',
+    'blaze-html-templates',
+    'jquery@3.0.0',
     'reactive-dict',
   ], 'client');
 
@@ -35,7 +35,7 @@ Package.onUse(function(api) {
   ], ['client', 'server']);
 
   api.imply([
-    'blaze-html-templates@1.1.2',
+    'blaze-html-templates',
   ], ['client']);
 
   api.addFiles([
@@ -80,7 +80,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('sebl29:useraccounts-core@1.15.0');
+  api.use('useraccounts:core@1.15.0');
 
   api.use([
     'accounts-password',
