@@ -2,26 +2,27 @@
 
 Package.describe({
   summary: 'Meteor sign up and sign in templates core package.',
-  version: '1.14.2',
+  version: '1.15.0',
   name: 'useraccounts:core',
-  git: 'https://github.com/meteor-useraccounts/core.git',
+  git: 'https://github.com/cheesington/core.git',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0.3');
+  api.versionsFrom('1.4.1');
 
   api.use([
     'accounts-base',
     'check',
     'underscore',
     'reactive-var',
+    'ecmascript',
+    'tmeasday:check-npm-versions@0.3.2', // detect npm t9n
   ], ['client', 'server']);
 
   api.use([
-    'blaze',
+    'blaze-html-templates',
+    'jquery@3.0.0',
     'reactive-dict',
-    'templating',
-    'jquery'
   ], 'client');
 
   api.use([
@@ -30,11 +31,10 @@ Package.onUse(function(api) {
 
   api.imply([
     'accounts-base',
-    'softwarerero:accounts-t9n@1.3.3',
   ], ['client', 'server']);
 
   api.imply([
-    'templating',
+    'blaze-html-templates',
   ], ['client']);
 
   api.addFiles([
@@ -79,7 +79,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('useraccounts:core@1.14.2');
+  api.use('useraccounts:core@1.15.0');
 
   api.use([
     'accounts-password',

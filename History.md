@@ -1,5 +1,11 @@
 ## Master
 
+## v1.15.0
+
+* [flow-routing] fixed dependency on kadira:flow-router: now using ostrio:flow-router-extra
+* [core] removed dependency on softwarerero:accounts-t9n: now using npm `meteor-accounts-t9n`
+* [core] updated dependencies
+
 ## v1.14.2
 
 * [flow-routing] fixed dependency on kadira:flow-router: now using the last non-Meteor@1.3 one
