@@ -17,7 +17,7 @@ For basic routing and content protection, `useraccounts:core` integrates with ei
 Any comments, suggestions, testing efforts, and PRs are very very welcome! Please use the [repository](https://github.com/meteor-useraccounts/ui) issues tracker for reporting bugs, problems, ideas, discussions, etc..
 
 ## The UserAccounts Guide
-Detailed explanations of features and configuration options can be found in the <a href="https://github.com/meteor-useraccounts/core/blob/master/Guide.md" target="_blank">Guide</a>.
+Detailed explanations of features and configuration options can be found in the [Guide](./Guide.md).
 
 ## Who's using this?
 
